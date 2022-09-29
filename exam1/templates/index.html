@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+		div{
+			width: 50%;
+			background-color:#ffcccc ;
+			align-content: center;
+			border-radius: 5px;
+			padding: 20px;
+			border: 5px solid #ff00bf;
+		}
+
+		h2{
+			text-align: center;
+
+		}
+		input[type=text],input[type=email],input[type=password], select, textarea {
+  		width: 100%;
+  		padding: 12px 20px;
+  		margin: 8px 0;
+  		display: inline-block;
+  		border: 1px solid #ccc;
+  		border-radius: 4px;
+ 		box-sizing: border-box;
+		}
+		input[type=button] {
+  		width: 100%;
+  		background-color: #4CAF50;
+  		color: white;
+  		padding: 14px 20px;
+  		margin: 8px 0;
+  		border: none;
+  		border-radius: 4px;
+  		cursor: pointer;
+		}
+
+		input[type=button]:hover {
+  		background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+<div>
+<h2>Student Registration Form</h2>
+<hr>
+
+<label for="fname">First Name: </label><br>
+<input type="text" id="fname" name="fname" placeholder="First Name"><br>
+
+<label for="mname">Middle Name: </label><br>
+<input type="text" id="mname" name="mname" placeholder="Middle Name"><br>
+
+<label for="lname">Last Name: </label><br>
+<input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+
+<label for="course">Course</label><br>
+	<select id="course" name="course">
+		<option selected disabled>Select Here</option>
+		<option value="Btech">Btech</option>
+		<option value="Mtech">Mtech</option>
+		<option value="BCA">BCA</option>
+		<option value="MCA">MCA</option>
+		<option value="BSC">BSC</option>
+	</select><br>
+
+	<label for="radio">Gender</label><br>
+	<input type="radio" id="radio" name="radio">Female
+	<input type="radio" id="radio" name="radio">Male
+	<input type="radio" id="radio" name="radio">Other<br><br>
+
+	<label for="phno">Phone:</label><br>
+	<input type="text" id="phno" name="phno" value="+91"><br>
+
+	<label for="address">Current Address:</label><br>
+	<textarea id="address" name="address" placeholder="Current Address" style="height: 100px"></textarea><br>
+
+	<label for="email">Email</label><br>
+	<input type="email" id="email" name="email" placeholder="Enter Email"><br><br>
+
+	<label for="password">Password</label><br>
+	<input type="password" id="password" name="password" placeholder="Enter Password"><br><br>
+
+	<label for="password">Re-type Password</label><br>
+	<input type="password" id="password" name="password" placeholder="retype Password"><br><br>
+
+	<input type="button" value="Register">
+
+	<img src="{% static 'winter.jpg' %}" style="width: 600px;">
+
+</div>
+</body>
+</html>
